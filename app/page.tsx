@@ -10,7 +10,7 @@ export default function Home() {
 
   useEffect(() => {
     // Get the 'isLoggedin' value from cookies and set authentication state
-    const authStatus = Cookies.get('refreshToken');
+    const authStatus = Cookies.get('isLoggedin');
     console.log(authStatus)
     setIsAuthenticated(!!authStatus);  // Convert to boolean (true if logged in, false otherwise)
   }, []);
