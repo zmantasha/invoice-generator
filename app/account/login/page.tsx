@@ -64,7 +64,7 @@ export default function LoginPage() {
 
   const handleGoogleLogin =async()=>{
     window.open(
-      `${process.env.server}/auth/google`,
+      `${process.env.NEXT_PUBLIC_SERVER}/auth/google`,
       "_self"
     );
   }
