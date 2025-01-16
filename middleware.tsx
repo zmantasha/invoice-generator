@@ -5,7 +5,7 @@ const authPaths=['/account/login', '/account/signup']
 // This function can be marked `async` if using `await` inside
 export default function middleware(request: NextRequest) {
    try {
-   const isAuthenticated= request.cookies.get('isLoggedin')?.value
+   const isAuthenticated= request.cookies.get('refreshToken')?.value
    const path= request.nextUrl.pathname;
    console.log(path)
    if(isAuthenticated){
