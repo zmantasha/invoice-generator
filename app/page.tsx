@@ -27,6 +27,9 @@ export default function Home() {
   return (
     <main className="container mx-auto py-8 px-4">
       {/* You can add a loading spinner here if necessary */}
+        {isAuthenticated === null ? (
+        <div>Loading...</div>  // Show loading text or a spinner
+      ) : null}
     </main>
   );
 }
