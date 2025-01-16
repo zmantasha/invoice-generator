@@ -7,7 +7,7 @@ export default function middleware(request: NextRequest) {
    try {
    const isAuthenticated= request.cookies.get('isLoggedin')?.value
    const path= request.nextUrl.pathname;
-
+   console.log(path)
    if(isAuthenticated){
     if(authPaths.includes(path)){
       return NextResponse.redirect(new URL('/user/myinvoice',request.url));
