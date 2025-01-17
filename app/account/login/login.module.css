@@ -129,3 +129,15 @@
   color: #6366f1;  /* indigo-500 */
   fill: currentColor;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .card { 
+    max-width: 90%;
+    padding: 30px;
+    
+  } 
+}
